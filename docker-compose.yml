@@ -1,0 +1,7 @@
+version: "3"
+services:
+    package-rss:
+        build: /path/to/repo/packageRSS/.
+        volumes:
+            - /path/to/repo:/packageRSS
+        restart: unless-stopped
